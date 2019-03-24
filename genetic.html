@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<style type="text/css">
+	.score{
+		font-size: 25px;
+	}
+	.generations{
+		font-size: 20px;
+	}
+	.worlds{
+		font-size: 25px;
+	}
+	button{
+		margin-top: 10px;
+	}
+</style>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="row">
+					<div class="col-3"><h4>Genetic Algorithm</h4></div>
+					<div class="col-7"> <h4>choose any phrase, population size and mutation rate </h4></div>
+				</div>
+				
+				
+				<h5>The default choices are "to be or not be", population size "500" and mutation rate  "0.01"</h5>
+			</div>
+		</div>	
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-4">
+				<div class="left">
+					<div>
+						<div>
+							<label for="target">phrase to evolve</label>
+						</div>
+						<input id="target" type="text">
+					</div>
+					<div>
+						<div>
+							<label for="popsize">population size</label>
+						</div>
+						<input id="popsize" type="text">
+					</div>
+					<div>
+						<div>
+							<label for="mutation">mutation rate</label>
+						</div>	
+						<input id="mutation" type="text">
+					</div>
+					<div>
+					<div>
+						<button class="btn-success">Evolve</button>	
+					</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="score"></div>
+				<div class="generations"></div>
+			</div>
+			<div class="col-4">
+				<div class="right">
+					<div class="worlds"></div>
+				</div>	
+			</div>	
+		</div>
+
+		
+		
+	</div>
+	
+	<script src="dna.js"></script>
+	<script src="population.js"></script>
+	<!-- <script src="evolution.js"></script> -->
+	<script src="evolution-interval.js"></script>
+	
+</body>
+</html>
